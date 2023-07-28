@@ -12,8 +12,28 @@ body {
   text-align: center;
 }
 
-table, th, td{
+table tr{
   background-color: var(--table-bg-color);
   border: 1px solid;
   padding: 0.4em;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+}
+
+.grid-header {
+  display: flex;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.grid-main {
+  display: flex;
+  justify-content: center;
 }
